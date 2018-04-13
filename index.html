@@ -3,6 +3,8 @@
 <head>
 	<title>Prabhu Teja - UI UX Developer | Home Page</title>
 	<meta charset="UTF-8"/>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	 <meta charset="utf-8">
@@ -110,7 +112,7 @@ color:#333;
 letter-spacing:2px;
 }
 .hero-text {
-    font-size: 60px;
+    font-size: 70px;
     margin: 10px 0px;
     font-weight: 800;
     letter-spacing: 0px;
@@ -141,11 +143,11 @@ padding-top:15px;
 .skills-container-fluid{
 padding:10rem 0rem;
 background: #f2f2f2;
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .about-container-fluid{
-padding:10rem 0rem 0rem 0rem;
+padding:8rem 0rem 0rem 0rem;
 }
 .skills-text, .about-text{
 padding-bottom:45px;
@@ -183,6 +185,8 @@ border-bottom:1px solid #4cd904;
 }
 .skills-icons-img:hover{
     border-bottom: 1px solid #333;
+	transform: scale(1.1);
+	cursor:pointer;
 }
 #myBtn {
   display: none;
@@ -218,6 +222,93 @@ text-decoration:none;
 .quicklinks-li a:hover{
 text-decoration:none;
 }
+
+.prabhuteja-about-pic{
+height:660px;
+height: -webkit-fill-available; width: 100%;
+background: url("images/prabhuteja.jpg");
+    background-image: url("images/prabhuteja.jpg");
+    background-position-x: 50%;
+    background-size: cover;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+.footer-col{
+padding:0;
+text-align:center;
+}
+.color-theme{
+background-image: linear-gradient(to right, #4cd904 20%, #57f604 60%, #57f604 30%, #4cd904 80%);
+ background-image: gradient(to right, #4cd904 20%, #57f604 60%, #57f604 30%, #4cd904 80%);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text; 
+}
+.about-me-text-head{
+font-size:5.25rem;
+font-weight:700;
+text-align:left;
+}
+.about-me-text-sub{
+text-align:justify;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 3rem;
+}
+.footer-address{
+color:#aeaeae;
+}
+.footer-address-a{
+color:#aeaeae;
+font-size: 23px;
+font-weight:600;
+}
+
+.footer-address-a:hover{
+color:#fff;
+text-decoration:none;
+}
+.footer-address-a:focus{
+color:#fff;
+text-decoration:none;
+}
+.footer-address i{
+color:#57f604;
+font-size: 30px;
+}
+.experience-text{
+background-image: linear-gradient(to right, #4cd904 20%, #57f604 60%, #57f604 30%, #4cd904 80%);
+    background-image: gradient(to right, #4cd904 20%, #57f604 60%, #57f604 30%, #4cd904 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+	    font-size: 22px;
+	font-weight:600;
+}
+.exp-content{
+	text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 1rem;
+}
+.exp-company-name{
+font-weight:600;
+text-align: left;
+margin-bottom:0px;
+}
+.Designation{
+font-size:15px;
+margin:0px;
+padding:0px;
+}
+.footer-row{
+margin:3.5rem 0rem;
+}
+
 @media only screen and (max-width: 960px)
 {
 .navbar-nav {
@@ -251,7 +342,7 @@ text-decoration:none;
 background-color:#333;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-background-color:#007dc5;
+<!-- background-color:#007dc5; -->
 }
 .knowmore-text {
     width: 50%;
@@ -260,53 +351,38 @@ background-color:#007dc5;
 .footer-container{
 text-align:center;
 }
-}
-.prabhuteja-about-pic{
-height: -webkit-fill-available; width: 100%;
-background: url("images/prabhuteja.jpg");
-    background-image: url("images/prabhuteja.jpg");
-    background-position-x: 50%;
-   
-    background-size: cover;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-}
-
-.color-theme{
-background-image: linear-gradient(to right, #4cd904 20%, #57f604 60%, #57f604 30%, #4cd904 80%);
- background-image: gradient(to right, #4cd904 20%, #57f604 60%, #57f604 30%, #4cd904 80%);
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text; 
-}
-.about-me-text-head{
-font-size:5.25rem;
-font-weight:700;
-text-align:left;
-}
-.about-me-text-sub{
-text-align:justify;
-    font-size: 18px;
-    line-height: 30px;
+.skills-container-fluid {
+    padding: 4rem 0rem;
+    background: #f2f2f2;
     margin-top: 3rem;
 }
-.footer-address{
-color:#aeaeae;
+.skills-text, .about-text {
+    padding-bottom: 2rem;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 6.5rem;
+    color: #333;
 }
-.footer-address-a{
-color:#aeaeae;
+.footer-address-a {
+    color: #aeaeae;
+    font-size: 16px;
+    font-weight: 600;
 }
-
-.footer-address-a:hover{
-color:#fff;
-text-decoration:none;
+.footer-address i {
+    color: #57f604;
+    font-size: 16px;
 }
-.footer-address i{
-color:#57f604;
+.copyright{
+margin-top: 3rem;
+}
+.footer-container {
+    padding:3rem;
+   
+}
+.about-container-fluid {
+    padding: 2rem 0rem 0rem 0rem;
+}
 }
 </style>
 <nav class="navbar navbar-default navbar-header-fixed">
@@ -327,8 +403,8 @@ color:#57f604;
         <li><a href="index.html">Home</a></li>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#">Projects</a></li>
-		<li><a href="#">Portfolio</a></li>
-		 <li><a href="#">Contact</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		 <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -367,7 +443,7 @@ color:#57f604;
 <!-- </div> -->
 
 <div class="row">
-<div class="col-md-4">
+<div class="col-md-5">
 <div class="prabhuteja-about-pic">
 </div>
  
@@ -375,15 +451,32 @@ color:#57f604;
 </ul>
 </div>
 
-<div class="col-md-8">
+<div class="col-md-7">
 <h1 class="about-me-text-head">Born in Andhra Pradesh, living and working in <span class="color-theme">Bangalore.</span></h1>
 <p class="about-me-text-sub">
-                            Currently working as a full time UI/UX Designer &amp; Front-end Developer at ABC Company. I love building UI/UX design experiences that improve user's everyday life + I convert the design into responsive HTML5/CSS3 that I call PSD to HTML Development. I am always hungry for new challenges and innovations.
-<br>
-                            Any spare time I have to work on side projects to further my skills so that I can apply these to real projects.<br><br>
-
+                            Currently working as a full time UI/UX Designer &amp; Front-end Developer at Data Template Infotech Private Limited. Company. I love building UI/UX design experiences that improve user's everyday life + I convert the design into responsive HTML5/CSS3 that I call PSD to HTML Development. I am always hungry for new challenges and innovations.
+</br>
+                            Any spare time I have to work on side projects to further my skills so that I can apply these to real projects.
 </p>
+<div class="exp-content">
+<p class="experience-text">Experience</p>
+							<p class="privileged-text">
+							I am privileged to say that I have had some great working experience.
+							</p>
+							<p class="exp-company-name">
+								Data Template, Bangalore - Mar 2017 to Present
+							</p>
+							<p class="Designation">Designation: UI/UX Developer.
+							</p>
+							<p class="exp-company-name">
+							Miracle Software Systems, Visakhapatnam - Nov 2016 - Feb 2017
+							</p>
+							<p class="Designation">Designation: MEAN Stack Developer (Intern).
+							</p>
 </div>
+</div>
+
+
 
 
 </div>
@@ -434,14 +527,17 @@ color:#57f604;
 Animations</p>
 <ul>
 <li class="skills-info">HTML 5, CSS 3</li>
-<li class="skills-info">Bootstrap</li>
-<li class="skills-info">JavaScript, JQuery</li>
+<li class="skills-info">Bootstrap, Zurb Foundation</li>
+<li class="skills-info">AngularJS, JavaScript, JQuery</li>
 </ul>
 </div>
 
 </div>
 </div>
 </div>
+
+
+
 
 
 <div class="container-fluid video-container">
@@ -513,40 +609,40 @@ Animations</p>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up float-scrolltop"></i></button>
     
-<div class="container-fluid footer-container">
+<div id="contact" class="container-fluid footer-container">
 
-        <div class="row">
-            <div class="col-md-4 footer-about">
-                <img class="img-fluid img-profile prabhu-img-home rounded-circle mx-auto mb-2" src="images/techprabhu-logo.png" title="Prabhu Teja" alt="Prabhu Teja Katakam">
+        <div class="row footer-row">
+            <div class="col-md-12 footer-col">
+                <img class="img-fluid img-profile prabhu-img-home rounded-circle mx-auto mb-2" src="images/techprabhu-logo-footer.png" title="Prabhu Teja" alt="Prabhu Teja Katakam">
             </div>
-            <div class="col-md-4 footer-location">
+            <div class="col-md-12 footer-col">
                 <p class="footer-headings">Locations</p>
 
                 <p class="footer-address">
                     C/o Sri Dhana Lakshmi PG,
-					<br>7th Main, 2nd Cross,
-					<br>Garebhavi Palya, 
-                    <br> Bangalore 560068,&nbsp;India
-                    <br>
-                    <br>
+					</br>7th Main, 2nd Cross,
+					</br>Garebhavi Palya, 
+                    </br> Bangalore 560068,&nbsp;India
+                    </br>
+                    </br>
 
-                    <i class="fa fa-phone"></i> &nbsp;<a class="footer-address-a" href="tel:+919849736478">+91 98497 36478</a>
-                    <br>
-                    <i class="fa fa-envelope"></i>&nbsp;<a class="footer-address-a" href="mailto:prabhuteja143@email.com">prabhuteja143@gmail.com</a>
-                    <br>
+                    <i class="fa fa-phone"></i> &nbsp;&nbsp;<a class="footer-address-a" href="tel:+919849736478">+91 98497 36478</a>
+                    </br></br>
+                    <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a class="footer-address-a" href="mailto:prabhuteja143@gmail.com">prabhuteja143@gmail.com</a>
+                  
                 </p>
 
             </div>
-            <div class="col-md-4 footer-quick-links">
-                <p class="footer-headings">Quick Links</p>
-                <ul>
-                    <li class="quicklinks-li"><a href="home.html">Home</a></li>
-                    <li class="quicklinks-li"><a href="#about-me">About Me</a></li>
-                    <li class="quicklinks-li"><a href="#">Projects</a></li>
-                    <li class="quicklinks-li"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="quicklinks-li"><a href="#">Contact</a></li>
-                </ul>
-            </div>
+            <!-- <div class="col-md-12 footer-quick-links"> -->
+                <!-- <p class="footer-headings">Quick Links</p> -->
+                <!-- <ul> -->
+                    <!-- <li class="quicklinks-li"><a href="home.html">Home</a></li> -->
+                    <!-- <li class="quicklinks-li"><a href="#about-me">About Me</a></li> -->
+                    <!-- <li class="quicklinks-li"><a href="#">Projects</a></li> -->
+                    <!-- <li class="quicklinks-li"><a href="portfolio.html">Portfolio</a></li> -->
+                    <!-- <li class="quicklinks-li"><a href="#">Contact</a></li> -->
+                <!-- </ul> -->
+            <!-- </div> -->
             <!-- <div class="col-md-3 footer-social-liinks"> -->
                 <!-- <p class="footer-headings">Social</p> -->
                 <!-- <ul> -->
@@ -560,7 +656,7 @@ Animations</p>
         </div>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" style="padding: 0px;">
                 <p class="copyright">© Prabhu Teja Katakam - 2018 | Privacy Polocy</p>
             </div>
         </div>
