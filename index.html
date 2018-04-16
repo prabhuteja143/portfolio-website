@@ -23,7 +23,8 @@
 	
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
 <style>
 
 .banner {
@@ -32,6 +33,60 @@
 	text-align:left;
 	position: relative;
 }
+
+
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  margin: -75px 0 0 -75px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #57f604;;
+  
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 5s;
+  animation-name: animatebottom;
+  animation-duration: 5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-500px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-500px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  }
+
+
 <!-- .typed{ -->
 <!-- background: linear-gradient(to right, #00c2eb 20%, #00ff9c 40%, #00ff9c 60%, #00c2eb 80%); -->
 <!-- } -->
@@ -124,6 +179,7 @@ letter-spacing:2px;
 .typed {
     font-size: 35px;
     font-weight: 1000;
+	    color: #f8f8f8;
 }
 .i-am{
 font-size:30px;
@@ -180,9 +236,26 @@ border:2px solid transparent;
 }
 
 .skills-icons-img{
+position: relative;
 width:70px;
 border-bottom:1px solid #4cd904;
+-webkit-animation-name: animateright;
+  -webkit-animation-duration: 1s;
+  animation-name: animateright;
+  animation-duration: 1s
 }
+
+@-webkit-keyframes animateright {
+  from { right:-100px; opacity:0 } 
+  to { right:0px; opacity:1 }
+}
+
+@keyframes animateright { 
+  from{ right:-100px; opacity:0 } 
+  to{ right:0; opacity:1 }
+}
+
+
 .skills-icons-img:hover{
     border-bottom: 1px solid #333;
 	transform: scale(1.1);
@@ -309,6 +382,11 @@ padding:0px;
 margin:3.5rem 0rem;
 }
 
+
+
+
+
+
 @media only screen and (max-width: 960px)
 {
 .navbar-nav {
@@ -385,6 +463,10 @@ margin-top: 3rem;
 }
 }
 </style>
+
+
+<div id="myDiv">
+
 <nav class="navbar navbar-default navbar-header-fixed">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -464,7 +546,7 @@ margin-top: 3rem;
 							I am privileged to say that I have had some great working experience.
 							</p>
 							<p class="exp-company-name">
-								Data Template Infotech Pvt. Ltd., Bangalore - 2017 to 2018
+								Data Template, Bangalore - 2017 to 2018
 							</p>
 							<p class="Designation">Designation: UI/UX Developer.
 							</p>
@@ -590,7 +672,7 @@ Animations</p>
 <div class="col-md-1" style="padding: 25px;"></div>
 
 <div class="col-md-6">
-<h1 style="text-align: center;color:#333;font-weight:900">Connect with us</h1>
+<h1 style="text-align: center;color:#333;font-weight:900">Connect with me</h1>
 <ul class="social-logos-list">  
 						<li><a href="https://www.facebook.com/prabhuteja143" title="facebook" target="_blank"><i class="fa fa-facebook social-logos"></i></a></li>
 						<li><a href="https://twitter.com/prabhuteja143" title="twitter" target="_blank"><i class="fa fa-twitter social-logos"></i></a></li>
@@ -616,7 +698,7 @@ Animations</p>
                 <img class="img-fluid img-profile prabhu-img-home rounded-circle mx-auto mb-2" src="images/techprabhu-logo-footer.png" title="Prabhu Teja" alt="Prabhu Teja Katakam">
             </div>
             <div class="col-md-12 footer-col">
-                <p class="footer-headings">Locations</p>
+                <p class="footer-headings">Location</p>
 
                 <p class="footer-address">
                     C/o Sri Dhana Lakshmi PG,
@@ -731,9 +813,20 @@ e.preventDefault();
 });
 </script>
 
+<script>
+var myVar;
 
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 
  
-
+</div>
 </body>
 </html>
