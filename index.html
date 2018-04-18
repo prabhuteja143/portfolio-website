@@ -16,14 +16,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script  src="https://static.optinchat.com/optinchat.js" id="oc_script" convid="d4o2gtL4IGVy6w2hooVXOXSdiXf1" async="true"></script>
+	<!-- <script  src="https://static.optinchat.com/optinchat.js" id="oc_script" convid="d4o2gtL4IGVy6w2hooVXOXSdiXf1" async="true"></script> -->
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 </head>
 
-<body onload="myFunction()" style="margin:0;">
+<body onload="myFunction()" style="margin:0;padding:0;">
 <div id="loader"></div>
 <style>
 
@@ -461,9 +461,42 @@ margin-top: 3rem;
 .about-container-fluid {
     padding: 2rem 0rem 0rem 0rem;
 }
-	#loader {
+#loader {
+   
     margin: -30px;
 }
+}
+.work-images{
+width:100%;
+box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+cursor:pointer;
+border-radius:3px;
+}
+
+.work-images:hover{
+transform: scale(1.15);
+transition:.5s;
+
+}
+.designs-text{
+text-align:center;
+padding-bottom: 45px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 6.5rem;
+    color: #333;
+}
+.designs-container-fluid{
+padding: 10rem 0rem;
+ 
+	}
+.design-img-col{
+padding:15px;
+}
+.designs-row{
+margin-right: 15px;
+    margin-left: 15px;
 }
 </style>
 
@@ -478,7 +511,7 @@ margin-top: 3rem;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand brand-logo" title="TechPrabhu" href="home.html"><img class="logo" src="images/techprabhu-logo.png" alt="logo" width="40px"/> 
+      <a class="navbar-brand brand-logo" title="TechPrabhu" href="index.html"><img class="logo" src="images/techprabhu-logo.png" alt="logo" width="40px"/> 
 	  <span class="tech-text">Tech</span><span class="prabhu-text">Prabhu</span>
 	  </a>
     </div>
@@ -638,6 +671,27 @@ Animations</p>
 
 </div>
 
+
+<div class="container-fluid designs-container-fluid">
+
+<div class="col-md-12">
+<h1 class="designs-text">My Designs<h1>
+</div>
+<div class="row designs-row">
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo1.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo2.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo3.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo4.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo5.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo6.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo7.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo8.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo9.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo10.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo11.jpg" /></div>
+<div class="col-md-2 col-sm-2 design-img-col"><img class="work-images" src="images/logo12.jpg" /></div>
+</div>
+</div>
 
 
 <div class="container-fluid writetous" style="background: linear-gradient(100deg,rgba(220, 220, 220, 0.8), rgba(174, 170, 170, 0.8));padding-top:3rem; padding-bottom:3rem;">
@@ -820,7 +874,7 @@ e.preventDefault();
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 2000);
+    myVar = setTimeout(showPage, 20);
 }
 
 function showPage() {
