@@ -1,0 +1,13 @@
+{
+  "name": "TechPrabhu",
+  "short_name": "TechPrabhu",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "images/homelogo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#6c645a",
+  "theme_color": "#6c645a"
+}
